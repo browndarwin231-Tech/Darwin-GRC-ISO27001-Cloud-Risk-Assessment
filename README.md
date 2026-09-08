@@ -1,6 +1,4 @@
-# Darwin-ISO27001-Cloud-Risk-Assessment
-
-GRC portfolio project covering cloud migration risks, ISO 27001 controls, NIST CSF mappings, and treatment plans.
+# ISO 27001 Cloud Migration Risk Assessment
 
 ## Project Overview
 
@@ -15,12 +13,12 @@ The project demonstrates how a GRC analyst identifies critical assets, evaluates
 ## Project Objectives
 
 - Identify critical assets included in the AWS cloud migration.
-- Document relevant security, availability, and compliance risks.
+- Document security, availability, and compliance risks.
 - Calculate inherent risk using likelihood and impact.
 - Design specific, measurable, and testable controls.
-- Map internal controls to ISO 27001 and NIST CSF 2.0.
+- Map controls to ISO 27001 and NIST CSF 2.0.
 - Create risk-treatment plans with owners and target dates.
-- Document suitable evidence for validating control effectiveness.
+- Identify evidence for validating control effectiveness.
 
 ---
 
@@ -76,7 +74,7 @@ The highest-rated risk was unauthorized access caused by misconfigured AWS permi
 
 ## Security Controls
 
-Five security controls were designed to address the identified risks.
+Five security controls were designed to address the identified risks:
 
 | ID | Control | ISO 27001 | NIST CSF 2.0 | Category | Frequency | Owner |
 |---|---|---|---|---|---|---|
@@ -111,7 +109,7 @@ All five risks were assigned the **Mitigate** strategy.
 |---|---|---|---|
 | R-01 | Enforce MFA, replace excessive permissions with role-based least privilege, remove unused credentials, and require approval for privileged roles | Identity and Access Management Team | October 7, 2026 |
 | R-02 | Enforce TLS 1.2 or higher, block insecure transfer protocols, validate certificates, and monitor migration connections | Cloud Security Engineer | September 21, 2026 |
-| R-03 | Test cutover, service-recovery, and rollback procedures before production deployment | IT Operations Manager | September 29, 2026 |
+| R-03 | Test cutover, service recovery, and rollback procedures before production deployment | IT Operations Manager | September 29, 2026 |
 | R-04 | Create daily encrypted backups in a separate AWS location and perform quarterly restoration tests | IT Operations Manager | September 17, 2026 |
 | R-05 | Review control mappings and evidence quarterly and track missing or outdated documentation | Compliance Manager | October 14, 2026 |
 
@@ -123,7 +121,7 @@ All treatment plans were recorded as **Planned**. Residual risk should be reasse
 
 ## 1. TechStart Project Overview
 
-This dashboard shows the selected TechStart Inc. project and its assigned GRC tasks.
+This dashboard shows the TechStart Inc. project and its assigned GRC tasks.
 
 ![TechStart Project Overview](screenshots/01-Techstart-Project-Overview.png)
 
@@ -131,7 +129,7 @@ This dashboard shows the selected TechStart Inc. project and its assigned GRC ta
 
 ## 2. Initial Asset Inventory
 
-This screenshot shows the initial empty asset inventory before the project assets were documented.
+This screenshot shows the empty asset inventory before the project assets were documented.
 
 ![Initial Asset Inventory](screenshots/02-Asset-Inventory-Empty.png)
 
@@ -147,33 +145,33 @@ Three critical assets were added to define the assessment scope.
 
 ## 4. Completed Risk-Treatment Dashboard
 
-The dashboard confirms that five treatment plans were created and that all assigned project tasks were completed.
+The dashboard confirms that five treatment plans were created and all assigned project tasks were completed.
 
-![Completed Risk Treatment Dashboard](screenshots/08-Completed-Risk-Treatment-Dashboard.png)
+![Completed Risk Treatment Dashboard](screenshots/04-Completed-Risk-Treatment-Dashboard.png)
 
 ---
 
 ## 5. Detailed Risk-Treatment Plans
 
-This view shows the risks, selected mitigation strategies, treatment status, responsible owners, and target dates.
+This view presents the risks, mitigation strategies, treatment statuses, responsible owners, and target dates.
 
-![Detailed Risk Treatment Plans](screenshots/09-Detailed-Risk-Treatment-Plans.png)
+![Detailed Risk Treatment Plans](screenshots/05-Detailed-Risk-Treatment-Plans.png)
 
 ---
 
 ## 6. ISO 27001 Control Mapping
 
-The control-mapping matrix shows the internal controls and their ISO 27001 references.
+The control-mapping matrix connects the internal controls to their ISO 27001 references.
 
-![ISO 27001 Control Mapping](screenshots/10-ISO27001-Control-Mapping.png)
+![ISO 27001 Control Mapping](screenshots/06-ISO27001-Control-Mapping.png)
 
 ---
 
 ## 7. ISO 27001 and NIST CSF Crosswalk
 
-The completed crosswalk demonstrates how the same internal controls align with both ISO 27001 and NIST CSF 2.0 outcomes.
+The completed crosswalk demonstrates how the same internal controls align with ISO 27001 and NIST CSF 2.0 outcomes.
 
-![ISO 27001 and NIST CSF Crosswalk](screenshots/11-ISO27001-NIST-Control-Crosswalk.png)
+![ISO 27001 and NIST CSF Crosswalk](screenshots/07-ISO27001-NIST-Control-Crosswalk.png)
 
 ---
 
@@ -229,17 +227,17 @@ ISO27001-Cloud-Risk-Assessment/
     ├── 01-Techstart-Project-Overview.png
     ├── 02-Asset-Inventory-Empty.png
     ├── 03-Critical-Asset-Inventory.png
-    ├── 08-Completed-Risk-Treatment-Dashboard.png
-    ├── 09-Detailed-Risk-Treatment-Plans.png
-    ├── 10-ISO27001-Control-Mapping.png
-    └── 11-ISO27001-NIST-Control-Crosswalk.png
-````
+    ├── 04-Completed-Risk-Treatment-Dashboard.png
+    ├── 05-Detailed-Risk-Treatment-Plans.png
+    ├── 06-ISO27001-Control-Mapping.png
+    └── 07-ISO27001-NIST-Control-Crosswalk.png
+```
 
 ---
 
 ## Data Export Note
 
-The original JSON file downloaded from the simulator is preserved in the `data` folder. The file contains the expected GRC schema, but its project-data arrays are empty. The populated project results are therefore supported by the screenshots included in this repository.
+The original JSON file downloaded from the simulator is preserved in the `data` folder. The file contains the expected GRC schema, but its project-data arrays are empty. The populated project results are supported by the screenshots included in this repository.
 
 ---
 
@@ -247,8 +245,5 @@ The original JSON file downloaded from the simulator is preserved in the `data` 
 
 **Darwin Brown Jr.**
 
-GRC and Cybersecurity Portfolio
+GRC and Cybersecurity Portfolio  
 [GitHub Profile](https://github.com/browndarwin231-Tech)
-
-```
-```
